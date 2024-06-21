@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row g-2 justify-content-center">
+            <div class="col-9 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-4">
+                <form class="card" id="lform">
+                    <div class="row g-2 m-0 head rounded-top">
+                        <div class="col-12 m-0 text-center">
+                            <h2>Login Form</h2>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-2 mt-1">
+                            <div class="col-12">
+                                <label for="loguser" class="font w-100">Username :</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" placeholder="abc_1234. . ." id="loguser"
+                                    class="form-control w-100 ps-3 ifont">
+                            </div>
+                            <div class="col-12">
+                                <p class="m-0 ps-4 loguser"></p>
+                            </div>
+                        </div>
+                        <div class="row g-2 mt-2">
+                            <div class="col-12">
+                                <label for="logpass" class="w-100 font">Password :</label><br>
+                            </div>
+                            <div class="col-12">
+                                <input type="password" placeholder="Abc@1234. . ." id="logpass"
+                                    class="form-control w-100 ps-3 ifont">
+                            </div>
+                            <div class="col-12">
+                                <p class="m-0 ps-4 logpass"></p>
+                            </div>
+                        </div>
+                        <div class="row g-2 mt-3">
+                            <div class="col-12 text-center">
+                                <button class="ifont loginbtn" type="button" id="login">Login</button>
+                            </div>
+                        </div>
+                        <div class="row g-2 mt-2">
+                            <div class="col-12 text-center">
+                                <span class="m-0">Not a member? <a href="#" id="register">Register now</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-2 justify-content-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <form class="card" id="vform">
+                                <div class="row g-2 m-0 head rounded-top">
+                                    <div class="col-12 m-0 text-center">
+                                        <h2>Register Form</h2>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <div class="row g-1">
+                                                <label class="col-12 font" for="fname">First Name:</label>
+                                                <input type="text" class="col-12 form-control ifont" id="fname"
+                                                    placeholder="First name. . .">
+                                                <p class="m-0 ps-2 fn"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row g-1">
+                                                <label class="col-12 font ps-2" for="lname">Last Name:</label>
+                                                <input type="text" class="col-12 form-control ifont" id="lname"
+                                                    placeholder="Last name. . .">
+                                                <p class="m-0 ps-2 ln"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-12">
+                                            <div class="row g-2 mt-1">
+                                                <label class="col-3 font pt-2" for="email">E-mail:</label>
+                                                <div class="col-9">
+                                                    <input type="email" class="form-control col-10 ifont" id="email"
+                                                        placeholder="abc@gmail.com. . .">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row g-2">
+                                                <div class="col-12">
+                                                    <p class="m-0 ps-3 mail"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2 mt-2">
+                                        <div class="col-4">
+                                            <label for="user" class="font w-100 pt-2">Username :</label>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" placeholder="abc_1234" id="user"
+                                                class="form-control w-100 ps-3 ifont">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0 ps-2 user"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2 mt-2">
+                                        <div class="col-4">
+                                            <label for="pass" class="w-100 font pt-2">Password:</label>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="password" placeholder="Abc@1234. . ." id="pass"
+                                                class="form-control w-100 ps-3 ifont">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="m-0 ps-2 pass"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2 mt-2">
+                                        <div class="col-12">
+                                            <div class="row g-2">
+                                                <label class="col-4 font mt-0" for="cpass">Confirm Password:</label>
+                                                <div class="col-8">
+                                                    <input type="password" class="form-control col-10 ifont" id="cpass"
+                                                        placeholder="Correct Password. . .">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p class="m-0 ps-2 cpass"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2 mt-2">
+                                        <div class="col-10 font">Genders:</div>
+                                        <div class="col-12">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" name="gender" type="radio" value="male"
+                                                    id="male" checked>
+                                                <label class="form-check-label" for="male">
+                                                    Male
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" name="gender" type="radio"
+                                                    value="female" id="female">
+                                                <label class="form-check-label" for="female">
+                                                    Female
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" name="gender" type="radio" value="other"
+                                                    id="other">
+                                                <label class="form-check-label" for="other">
+                                                    Others
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p class="m-0 ps-2 genderrr"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-2 mt-2">
+                                        <div class="col-12"><span class="font w-100">Select Place :</span></div>
+                                        <div class="col-4">
+                                            <div class="row g-2">
+                                                <div class="col-12">
+                                                    <select class="form-select form-select-md"
+                                                        aria-label="Large select example" id="country" name="country">
+                                                        <option value="x" selected>Country</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="row g-2">
+                                                <div class="col-12">
+                                                    <select class="form-select form-select-md"
+                                                        aria-label="Large select example" id="state" name="state">
+                                                        <option value="y" selected>States</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="row g-2">
+                                                <div class="col-12">
+                                                    <select class="form-select form-select-md"
+                                                        aria-label="Large select example" id="city" name="city">
+                                                        <option value="z" selected>City</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-1">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <p class="m-0 ps-2 counterr"></p>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="m-0 ps-2 staterr"></p>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="m-0 ps-2 citerr"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-2 mt-2">
+                                        <div class="col-5 pt-1">
+                                            <span class="font pe-3">Enter Image:</span>
+                                        </div>
+                                        <div class="col-7">
+                                            <input class="form-control" type="file" id="img" accept="image/*">
+                                        </div>
+                                        <p class="m-0 ps-2 img"></p>
+                                    </div>
+
+                                    <div class="row g-2 mt-3 justify-content-between">
+                                        <div class="col-5 text-center">
+                                            <button class="ifont loginbtn showbtn" type="button"
+                                                id="clear">Clear</button>
+                                        </div>
+                                        <div class="col-5 text-center">
+                                            <button class="ifont loginbtn" type="button" id="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ext.js"></script>
+</body>
+
+</html>

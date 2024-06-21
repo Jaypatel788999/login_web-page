@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="web-p.css">
+</head>
+
+<body>
+    <section class="home"></section>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg focus-0 pt-3">
+            <a class="navbar-brand logo" href="#"><i class="fas fa-globe"></i>&nbsp;GLOBAL MEDIA</a>
+            <button class="navbar-toggler z-index-n1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i class="fas fa-bars menu"></i></span>
+            </button>
+            <div class="collapse navbar-collapse option" id="navbarNavDropdown">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link item" aria-current="page" href="#">Adventures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item" aria-current="page" href="#">Publishers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item" aria-current="page" href="#">Agencies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item" aria-current="page" href="#">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item" aria-current="page" href="#">Ourpartners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+            <span class="p-name text-white pe-3 profname"></span>
+            <img src="images/istockphoto-1337144146-612x612.jpg" alt="" id="profile" class="profileimg" width="50px" height="50px">
+            <button class="ifont loginbtn border-black" type="button" id="login">Login</button>
+                <div class="card" id="status">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="card-body">
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <h4 class="p-email s-head text-center fw-bolder text-white fs-5"></h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class=" d-flex justify-content-center">
+                                        <img src="images/istockphoto-1337144146-612x612.jpg" alt="user profile" class="rounded-circle prof-pic" width="130px" height="130px">
+                                        <i class="far fa-edit btn edit-b"></i>
+                                    </div>
+                                </div>
+                                <div class="row g-2 mt-1 mb-1">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <h3 class="p-name text-white">name</h3>
+                                    </div>
+                                </div>
+                                <div class="row g-1 justify-content-center">
+                                    <div class="col-10 s-info-t"><div class="pt-3 ps-4"><h6>User-ID : <span class="p-user"></span></h6></div></div>
+                                    <div class="col-10 s-info"><div class="pt-3 ps-4"><h6>E-mail : <span class="p-email"></span></h6></div></div>
+                                    <div class="col-10 s-info"><div class="pt-3 ps-4"><h6>Gender : <span class="p-gender"></span></h6></div></div>
+                                    <i class="fas fa-user-edit edit-d"></i>
+                                    <div class="col-10 s-info"><div class="pt-3 ps-4"><h6>Country : <span class="p-country"></span></h6></div></div>
+                                    <div class="col-10 s-info"><div class="pt-3 ps-4"><h6>State : <span class="p-state"></span></h6></div></div>
+                                    <div class="col-10 s-info"><div class="pt-3 ps-4"><h6>City : <span class="p-city"></span></h6></div></div>
+                                    <button class="logout s-info-b col-10"><i class="fas fa-sign-out-alt fs-4 pt-1"></i></button>
+                                </div>
+                                <div class="row g-1 justify-content-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="row g-2 justify-content-center mb-2">
+                <div class="col-10 col-sm-8 col-md-8 col-lg-6 col-xl-4 col-xxl-4 text-center m-0">
+                    <p>Global agency online marketing</p>
+                </div>
+            </div>
+            <div class="row g-2 justify-content-center mb-2">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-6 text-center">
+                    <button type="button" class="btn btn-lg w-auto button hero-b">SIGN UP RIGHT NOW</button>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="row g-4 justify-content-center feat">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Advertisers</h5>
+                            <p class="card-text">That can be definitely said about the contemporary travel websites.
+                            </p>
+                            <div class="d-flex c-btn">
+                                <a href="#" class="sign-a"><button type="button" class="btn btn-lg button c-btns">JOIN
+                                        NOW</button></a>
+                                <a href="#" class="btn btn-lg c-read">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Publishers</h5>
+                            <p class="card-text">That can be definitely said about the contemporary travel websites.
+                            </p>
+                            <div class="d-flex c-btn">
+                                <a href="#" class="sign-a"><button type="button" class="btn btn-lg button c-btns">JOIN
+                                        NOW</button></a>
+                                <a href="#" class="btn btn-lg c-read">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body c-body">
+                            <h5 class="card-title">Agencies</h5>
+                            <p class="card-text">That can be definitely said about the contemporary travel
+                                websites.</p>
+                            <div class="d-flex c-btn">
+                                <a href="#" class="sign-a"><button type="button" class="btn btn-lg button c-btns">JOIN
+                                        NOW</button></a>
+                                <a href="#" class="btn btn-lg c-read">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="row g-2 justify-content-center mb-2">
+                <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                    <h1>Why we?</h1>
+                </div>
+            </div>
+            <div class="row g-2 justify-content-center info_2">
+                <div class="col-sm-12 col-md-8 col-lg-8 text-center">
+                    <p> That can't be definitely said about the contemporary travel website.</p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center info-r" style="width: 90%;margin: auto;">
+                <div class="col-sm-10 col-md-6 col-lg-3">
+                    <div class="row g-2 mb-4"><i class="spinner" style="color: #ffa600;font-weight: 30px;"></i>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <p>As the holidays approach, everything tends to get alittle hectic. stress levels
+                                increase, there seems to be more unfinished business to take care of than usual. and
+                                headlines</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-3">
+                    <div class="row g-2 mb-4"><i class="spinner" style="color: #ffa600;"></i></div>
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <p>Even with jQuery's popularity there's no need to rely on a JS library for every
+                                project. Classic JavaScript works in all major browsers and it's really all you need
+                                to build dynamic interface.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-3">
+                    <div class="row g-2 mb-4"><i class="spinner" style="color: #ffa600;"></i></div>
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <p>On the first day of Christmas my true love gave me ... a macbook pro with Creative
+                                suite. Well. that's not exactly how the holiday jingle goes, but if you are a web
+                                designer this list of gift</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-3">
+                    <div class="row g-2 mb-4"><i class="spinner" style="color: #ffa600;"></i></div>
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <p>When custom label printer consoliderated labels erdesigned its website, their end
+                                goal was to increase customer conversions. Yet they liked their site, and didn't see
+                                the need to make</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- detail edit Modal -->
+    <div class="modal" id="model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-2 justify-content-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <form class="card" id="vform">
+                                    <div class="row g-2 m-0 head rounded-top">
+                                        <div class="col-12 text-center">
+                                            <h2 class="text-white">Update Details</h2>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row g-2">
+                                            <div class="col-6">
+                                                <div class="row g-1 mb-1">
+                                                    <label class="col-12 font" for="fname">First Name:</label>
+                                                    <input type="text" class="col-12 form-control ifont h-100" id="fname" placeholder="First name. . .">
+                                                    <p class="m-0 ps-2 fn"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <label class="col-12 font ps-2" for="lname">Last Name:</label>
+                                                    <input type="text" class="col-12 form-control ifont h-100" id="lname" placeholder="Last name. . .">
+                                                    <p class="m-0 ps-2 ln"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2">
+                                            <div class="col-12">
+                                                <div class="row g-2 mt-1">
+                                                    <label class="col-3 font ps-3 pt-1" for="email">E-mail:</label>
+                                                    <div class="col-9">
+                                                        <input type="email" class="form-control col-10 ifont h-100" id="email"
+                                                            placeholder="abc@gmail.com. . .">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row g-2">
+                                                    <div class="col-12">
+                                                        <p class="m-0 ps-3 mail"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2 mt-2">
+                                            <div class="col-3">
+                                                <label for="user" class="font w-100 pt-1">Username :</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" placeholder="abc_1234" id="user"
+                                                    class="form-control w-100 ps-3 ifont h-100">
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="m-0 ps-2 user"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2 mt-2">
+                                            <div class="col-3">
+                                                <label for="pass" class="w-100 font pt-1">Password:</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="password" placeholder="Abc@1234. . ." id="pass"
+                                                    class="form-control w-100 ps-3 ifont h-100">
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="m-0 ps-2 pass"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2 mt-2">
+                                            <div class="col-3 font">Genders:</div>
+                                            <div class="col-9">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" name="gender" type="radio"
+                                                        value="male" id="male" checked>
+                                                    <label class="form-check-label" for="male">
+                                                        Male
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" name="gender" type="radio"
+                                                        value="female" id="female">
+                                                    <label class="form-check-label" for="female">
+                                                        Female
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" name="gender" type="radio"
+                                                        value="other" id="other">
+                                                    <label class="form-check-label" for="other">
+                                                        Others
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="m-0 ps-2 genderrr"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="row g-2 mt-2">
+                                            <div class="col-12 pt-1"><span class="font w-100">Select Place :</span></div>
+                                            <div class="col-4">
+                                                <div class="row g-2">
+                                                    <div class="col-12">
+                                                        <select class="form-select form-select-md"
+                                                            aria-label="Large select example" id="country"
+                                                            name="country">
+                                                            <option value="x" selected>Country</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-4">
+                                                <div class="row g-2">
+                                                    <div class="col-12">
+                                                        <select class="form-select form-select-md"
+                                                            aria-label="Large select example" id="state" name="state"
+                                                            >
+                                                            <option value="y" selected>States</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-4">
+                                                <div class="row g-2">
+                                                    <div class="col-12">
+                                                        <select class="form-select form-select-md"
+                                                            aria-label="Large select example" id="city" name="city"
+                                                            >
+                                                            <option value="z" selected>City</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-12 mt-1">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <p class="m-0 ps-2 counterr"></p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p class="m-0 ps-2 staterr"></p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p class="m-0 ps-2 citerr"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row g-2 mt-3 justify-content-between">
+                                            <div class="col-5 text-center">
+                                                <button class="ifont loginbtn showbtn" type="button"id="clear">Clear</button>
+                                            </div>
+                                            <div class="col-5 text-center">
+                                                <button class="ifont loginbtn" type="button" id="update">Update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- image edit Modal -->
+    <div class="modal fade" id="picture-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Change Photo :</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-2 mt-2">
+                <div class="col-5 pt-1">
+                    <span class="font pe-3">Enter Image:</span>
+                </div>
+                <div class="col-7">
+                    <input class="form-control" type="file" id="img" accept="image/*">
+                </div>
+                <p class="m-0 ps-2 img"></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary photo-cancel" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary photo-change">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="" alt="" class="extra">
+    <script src="web-p.js"></script>
+</body>
+
+</html>
